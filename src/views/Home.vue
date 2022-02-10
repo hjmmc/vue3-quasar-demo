@@ -1,8 +1,8 @@
 <template>
-  <div class="home">
+  <q-page class="flex flex-center">
     <img alt="Vue logo" src="../assets/logo.png" />
-  </div>
-  <div>{{ version }}</div>
+    <div>{{ version }}</div>
+  </q-page>
 </template>
 
 <script lang="ts">

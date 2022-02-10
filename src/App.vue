@@ -62,27 +62,16 @@
     </q-drawer>
 
     <q-page-container>
-      <HelloWorld />
+      <router-view />
     </q-page-container>
   </q-layout>
 </template>
 
 <script lang="ts">
-import { ref } from 'vue'
-import HelloWorld from './components/HelloWorld.vue'
+import { Options, Vue } from 'vue-class-component'
 
-export default {
-  name: 'LayoutDefault',
-
-  components: {
-    HelloWorld
-  },
-
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  setup(): any {
-    return {
-      leftDrawerOpen: ref(false)
-    }
-  }
+@Options({})
+export default class App extends Vue {
+  leftDrawerOpen = false
 }
 </script>
