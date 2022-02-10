@@ -1,5 +1,7 @@
 # vue3-demo
 
+A vue3 demo with quasar
+
 ## Project setup
 ```
 yarn install
