@@ -1,7 +1,16 @@
 <template>
-  <q-page class="flex flex-center">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <div>{{ version }}</div>
+  <q-page>
+    <q-banner class="bg-primary text-white">
+      Unfortunately, the credit card did not go through, please try again.
+      <template v-slot:action>
+        <q-btn flat color="white" label="Dismiss" />
+        <q-btn flat color="white" label="Update Credit Card" />
+      </template>
+    </q-banner>
+    <div class="flex flex-center">
+      <img alt="Vue logo" src="../assets/logo.png" />
+      <div>{{ version }}</div>
+    </div>
   </q-page>
 </template>
 
